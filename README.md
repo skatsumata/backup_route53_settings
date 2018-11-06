@@ -18,6 +18,37 @@ This is a Python script that gets all HostedZone and Recordset settings of route
 | python  | 2.7.5  |
 | boto3  | 1.9.33  |
 
+# Configuration
+
+実行する端末にAWSプロファイル(**$ aws configure --profile your-profile-name**)が設定されている必要があります。  
+このユーザには、ListResourceRecordSets,ListHostedZones 権限が付与されている必要があります。
+
+```python:backup_route53_settings.py
+profile = '<your profile name>'
+```
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "route53:ListResourceRecordSets",
+            "Resource": "arn:aws:route53:::hostedzone/*"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": "route53:ListHostedZones",
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+
+
 # usage
 
 スクリプトを実行すると後述したようにコンソール出力されるのでリダイレクトしてファイルに格納する想定です。
