@@ -2,6 +2,8 @@
 
 route53の全てのHostedZoneとレコードセットの設定をJson形式で取得するPythonスクリプトです。
 
+This is a Python script that gets all HostedZone and Recordset settings of route53 in Json format.
+
 **Hosted zones**  
 ![](https://i.gyazo.com/ffcb87fda027a861ee258cd0ad252465.png)
 
@@ -10,7 +12,7 @@ route53の全てのHostedZoneとレコードセットの設定をJson形式で�
 
 # environment
 
-| 項目 | バージョン |
+| # | version |
 |:--|:--|
 | OS   | CentOS 7.5.1804  |
 | python  | 2.7.5  |
