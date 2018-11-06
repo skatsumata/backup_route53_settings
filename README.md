@@ -23,6 +23,9 @@ This is a Python script that gets all HostedZone and Recordset settings of route
 実行する端末にAWSプロファイル(**$ aws configure --profile your-profile-name**)が設定されている必要があります。  
 このユーザには、ListResourceRecordSets,ListHostedZones 権限が付与されている必要があります。
 
+A terminal that runs this script must have an AWS profile set up.
+The user specified in this profile must have ListResourceRecordSets, ListHostedZones privilege granted.
+
 ```python:backup_route53_settings.py
 profile = '<your profile name>'
 ```
