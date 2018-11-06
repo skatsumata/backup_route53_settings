@@ -66,7 +66,7 @@ $ python backup_route53_settings.py > route53_settings.txt
 "hostedZones": [
 {
     "Id": "/hostedzone/xxxxxxxx"
-    "Name": "xxxxx.com.",
+    "Name": "example.com.",
     "Config": {
         "Comment": "\u4f1a\u793e\u30db\u30fc\u30e0\u30da\u30fc\u30b8",
         "PrivateZone": false
@@ -81,7 +81,7 @@ $ python backup_route53_settings.py > route53_settings.txt
                 }
             ],
             "Type": "A",
-            "Name": "nyango.com.",
+            "Name": "example.com.",
             "TTL": 300
         },
         { ... }
